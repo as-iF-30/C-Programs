@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i=1,n,j,c;
+	while(i<=1000)
+	{
+		c=0;
+		for(j=1;j<=i;j++)
+		{
+		if(i%j==0)
+		c++;
+		}
+		if(c==2)
+			printf("%d\n",i);
+			i++;
+		}
+	getch();
+}
